@@ -1,0 +1,63 @@
+{
+  "id": "apple-iphone-17-pro-max",
+  "brand": "Apple",
+  "model": "iPhone 17 Pro Max",
+  "category": "smartphone",
+  "releaseDate": "2025",
+  "images": {
+    "device": "https://images.unsplash.com/photo-1592286927505-2fd0a6b3e8a0?auto=format&fit=crop&w=1200&q=80"
+  },
+  "pricing": {
+    "launchMSRP": {
+      "currency": "USD",
+      "amount": 1199
+    },
+    "current": null
+  },
+  "display": {
+    "size": "6.9-inch",
+    "resolution": "TBD",
+    "panel": "OLED",
+    "refreshRate": "120Hz"
+  },
+  "memory": {
+    "ram": [
+      "TBD"
+    ],
+    "storage": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ]
+  },
+  "camera": {
+    "main": "TBD",
+    "ultrawide": "TBD",
+    "telephoto": "TBD",
+    "front": "TBD"
+  },
+  "performance": {
+    "chipset": {
+      "name": "TBD",
+      "photo": ""
+    },
+    "cpu": {
+      "name": "TBD",
+      "photo": ""
+    },
+    "gpu": {
+      "name": "TBD",
+      "photo": ""
+    }
+  },
+  "battery": {
+    "capacity": "TBD",
+    "charging": "TBD",
+    "usage": {
+      "light": "Estimated",
+      "video": "Estimated",
+      "gaming": "Estimated",
+      "mixed": "Estimated"
+    }
+  }
+}
