@@ -1,0 +1,4 @@
+const list=document.getElementById('devices');const search=document.getElementById('search');let all=[];
+async function load(){const r=await fetch('/api/devices');all=await r.json();render(all)}
+function render(items){document.getElementById('count').textContent=items.length+' devices';list.innerHTML=items.map(d=>`<article class="card"><img src="${d.images?.device||''}"><div class="body"><div class="muted">${d.brand}</div><h3>${d.model}</h3><div class="price">${d.pricing?.launchMSRP?.currency||'USD'} ${d.pricing?.launchMSRP?.amount??'—'}</div><a class="muted" href="/device.html?id=${encodeURIComponent(d.id)}">View details →</a></div></article>`).join('')}
+search.addEventListener('input',e=>{const q=e.target.value.toLowerCase();render(all.filter(d=>(d.brand+' '+d.model).toLowerCase().includes(q)))});load();
